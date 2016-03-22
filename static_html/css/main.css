@@ -1,0 +1,87 @@
+body {
+  color:#3e2723;
+}
+h1, h2, h3 {
+  font-family: 'Pacifico', cursive, serif;
+}
+div#topToolbar {
+  text-align:right;
+}
+main > div.row {
+  margin-bottom:7em;
+}
+a:link, a:visited, a:hover, a:active {
+  color:inherit;
+  font-weight:bold;
+}
+.darkElement {
+  background-color: #3e2723;
+  color:#fff;
+}
+.orangeElement {
+  background-color:#ff6d00;
+  color:#fff;
+}
+nav a:link,
+nav a:visited,
+nav a:hover,
+nav a:active {
+  text-decoration: none;
+}
+nav .input-field {
+  line-height:56px;
+  margin-top:4px;
+}
+div#logoBar {
+  padding-top:2em;
+}
+a#logo {
+  overflow:hidden;
+  width:140px;
+  height:85px;
+  text-indent:-999px;
+  background-image: url("../img/logoSmall.png");
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+div#test {
+  background:#ff6d00;
+  margin-top:2em;
+  height:640px;
+}
+
+div#featuredRecipes a.orangeElement,
+div#popularRecipes a.orangeElement {
+  display: block;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  color:white;
+}
+div#featuredRecipes .card span,
+div#popularRecipes .card span {
+  line-height:2.5em;
+}
+div#featuredRecipes .card span.card-title,
+div#popularRecipes .card span.card-title {
+  line-height:1.444em;
+}
+div#featuredRecipes i,
+div#popularRecipes i {
+  vertical-align:middle;
+}
+
+footer {
+  height:400px;
+}
+
+@media only screen and (max-width: 600px) {
+  nav .input-field {
+    line-height: 46px;
+    margin-top: 5px;
+  }
+  a#logo {
+    width:100%;
+  }
+}
