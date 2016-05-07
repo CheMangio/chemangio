@@ -1,0 +1,20 @@
+h4,h5{
+	font-family: 'Pacifico', cursive, serif;
+}
+
+.card-image {
+	margin: 10px 0 10px 0;
+	width: 100%;
+	height: auto;
+}
+
+.card-image img{
+	width: 100%;
+	height: auto;
+}
+
+.card-action a {
+	margin: -10px 0 0 0;
+	float: right;
+}
+

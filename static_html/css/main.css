@@ -4,6 +4,9 @@ body {
 h1, h2, h3 {
   font-family: 'Pacifico', cursive, serif;
 }
+.sidebar h3 {
+  font-size:1.6em;
+}
 div#topToolbar {
   text-align:right;
 }
@@ -51,25 +54,41 @@ div#test {
   height:640px;
 }
 
-div#featuredRecipes a.orangeElement,
-div#popularRecipes a.orangeElement {
+div.recipeLi a.orangeElement {
   display: block;
   position: absolute;
   bottom: 8px;
   right: 8px;
   color:white;
 }
-div#featuredRecipes .card span,
-div#popularRecipes .card span {
+
+div.recipeLi .card span {
   line-height:2.5em;
 }
-div#featuredRecipes .card span.card-title,
-div#popularRecipes .card span.card-title {
+div.recipeLi .card span.card-title {
   line-height:1.444em;
 }
-div#featuredRecipes i,
-div#popularRecipes i {
+div.recipeLi i {
   vertical-align:middle;
+}
+div#catSideBar h3 {
+  display:inline-block;
+  margin-right:.6em;
+}
+div#catSideBar ul {
+  display: inline-block;
+}
+div#catSideBar ul li {
+  display:inline-block;
+  font-family: "Pacifico", cursive, serif;
+  font-size:1.44em;
+  margin-right:.6em;
+}
+div#catSideBar ul li a:link {
+  font-weight:400;
+}
+div#catSideBar ul li a:hover {
+  color:#ff6d00;
 }
 
 footer {

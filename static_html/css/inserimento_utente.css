@@ -1,0 +1,61 @@
+#pageInsRicUtente h4,h5,h6{
+	font-family: 'Pacifico', cursive, serif;
+	margin-top: 30px; 
+	padding-bottom: 10px;
+}
+
+#pageInsRicUtente #difficolta li{
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+#pageInsRicUtente .input-field #textarea1:focus{
+	border-bottom: 1px solid #ff6d00;
+}
+
+#pageInsRicUtente .input-field #preparazione:focus {
+	border-bottom: 1px solid #ff6d00;
+}
+
+#pageInsRicUtente .input-field input[type=text]:focus + label {
+     color: #ff6d00;
+}
+
+#pageInsRicUtente .input-field input:hover{
+     color: #ff6d00;
+}
+
+#pageInsRicUtente #ingredienti > div {
+	position:relative;
+}
+
+#pageInsRicUtente #ingredienti ul#ingrConsigli {
+	position:absolute;
+	top:100%;
+	left:0;
+	width:100%;
+	display:none;
+}
+
+#pageInsRicUtente #ingredienti ul#ingrConsigli li,
+#pageInsRicUtente #ingredienti ul#ingrSelezionati li {
+	border-bottom:1px solid #ddd;
+	cursor:pointer;
+	background:#fff;
+	line-height:2em;
+}
+
+#pageInsRicUtente #ingredienti ul#ingrConsigli li:hover {
+	background:#eee;
+}
+
+#pageInsRicUtente #ingredienti ul#ingrSelezionati li input {
+	margin-bottom:0;
+}
+#pageInsRicUtente #ingredienti ul#ingrSelezionati li span {
+	line-height:3.5em;
+}
+#pageInsRicUtente #ingredienti ul#ingrSelezionati li span.remIngr {
+	text-align:right;
+	cursor: pointer;
+}

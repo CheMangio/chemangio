@@ -1,0 +1,49 @@
+
+div .bar img{
+	max-height: 50px;
+	max-width: 50px;
+	position: absolute;
+}
+
+div .col.s2{
+	min-height: 150px;
+	min-width: 150px;
+	margin-left: 25px;
+}
+
+div .bar  p{
+	margin-left: 50px;
+	margin-top: 0px;
+	padding-left: 10px;
+	font-family: "Pacifico";
+}
+
+div #data{
+	margin-top: -7px;
+	color: #ff6d00;
+}
+
+#autore{
+	text-align: left;
+}
+
+h4{
+  font-family: 'Pacifico', cursive, serif;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+
+#ingredienti a{
+	display: inline-block;
+	font-family: 'Pacifico', cursive, serif;
+	color: #ff6d00;
+	float: left;
+}
+
+#preparazione img{
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}

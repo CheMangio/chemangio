@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!--Import Google Icon Font-->
+		<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!--Import materialize.css-->
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="css/inserimento_utente.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="css/main.css"  media="screen,projection"/>
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+<body id="pageInsRicUtente">
+		<header class="white">
+			<div id="topToolbar" class="darkElement">
+				<div class="container">
+					<a href="#">log in</a> | <a href="#">sign in</a>
+				</div>
+			</div>
+			<div id="logoBar" class="container">
+				<div class="row">
+					<a href="#" id="logo" class="col s12 m3">chemangio</a>
+				</div>
+			</div>
+			<nav class="orangeElement">
+				<div class="nav-wrapper container">
+					<div class="row">
+						<a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+			      <ul class="left hide-on-med-and-down">
+			        <li><a href="index.html">Home</a></li>
+			        <li><a href="badges.html">Components</a></li>
+			        <li><a href="collapsible.html">Javascript</a></li>
+			        <li><a href="mobile.html">Mobile</a></li>
+			      </ul>
+			      <ul class="side-nav orangeElement" id="mobile-nav">
+			        <li><a href="index.html">Home</a></li>
+			        <li><a href="badges.html">Components</a></li>
+			        <li><a href="collapsible.html">Javascript</a></li>
+			        <li><a href="mobile.html">Mobile</a></li>
+			      </ul>
+						<div class="right col m3">
+			        <div class="input-field">
+			          <input id="search" type="search" required>
+			          <label for="search"><i class="material-icons">search</i></label>
+			          <i class="material-icons">close</i>
+			        </div>
+			      </div>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main class="container">
+
+			<div id="nome_ricetta" class="row">
+				
+				<div class="col s12">
+				<h4>Nome Ricetta</h4>
+     				<div class="row">
+        				<div class="input-field col s12">
+          					<textarea id="textarea1" class="materialize-textarea"></textarea> 					
+        				</div>
+      				</div>
+    			</div>
+			</div>
+
+			<div class="row">
+				<h4>Immagine del Piatto</h4>	
+ 				<div>
+    				<div class="file-field input-field">
+     					<div class="btn orange accent-4">
+        					<span>File</span>
+       						 <input type="file">
+      					</div>
+      					<div class="file-path-wrapper">
+        					<input class="file-path validate" type="text">
+      					</div>
+    				</div>
+  				</div>
+  			</div>
+
+  			<div id="specifiche" class="row">
+  				<h5>Specifiche Tecniche</h5>
+
+  				<!-- Difficoltà -->	
+  				<div class="input-field col s2">
+    				<select class="selectarea">
+      					<option value="" disabled selected>Scegli opzione</option>
+      					<option value="1">Alta</option>
+      					<option value="2">Media</option>
+      					<option value="3">Bassa</option>
+    				</select>
+    				<label>Seleziona Difficoltà</label>
+  				</div>
+  				<!-- Fine Difficoltà -->
+  				<!-- Preparazione -->
+  				<div class="col s2">
+     				<div class="row">
+        				<div class="input-field col s12">
+          					<input placeholder="Placeholder" id="preparazione" type="text" class="validate">
+          					<label for="preparazione">Preparazione (min.)</label>
+        				</div>
+        			</div>
+        		</div>	
+  				<!-- Fine Preparazione -->
+  				<!-- Cottura -->
+  				<div class="col s2">
+     				<div class="row">
+        				<div class="input-field col s12">
+          					<input placeholder="Placeholder" id="preparazione" type="text" class="validate">
+          					<label for="preparazione">Cottura(min.)</label>
+        				</div>
+        			</div>
+        		</div>	
+  				<!-- Fine Cottura -->
+
+  				<!--Dosi Per -->
+				<div class="input-field col s2">
+    				<select id="selectarea">
+      					<option value="" disabled selected>Scegli opzione</option>
+      					<option value="1">2 persone</option>
+      					<option value="2">4 persone</option>
+    				</select>
+    				<label>Seleziona "Dosi Per"</label>
+  				</div>
+  				<!-- Fine Dosi Per -->
+  				<!-- Costo -->
+  				<div class="input-field col s2">
+    				<select id="selectarea">
+      					<option value="" disabled selected>Scegli opzione</option>
+      					<option value="1">Alto</option>
+      					<option value="2">Medio</option>
+      					<option value="3">Basso</option>
+    				</select>
+    				<label>Seleziona Costo</label>
+  				</div>
+  				<!-- Fine Costo -->
+   			</div>
+
+  			<!-- Ingredienti -->
+  			<div id="ingredienti" class="row">
+  				<h4>Ingredienti</h4>
+  				<div>
+            <ul id="ingrConsigli"></ul>
+            <input type="text" id="ingrInput" placeholder="Scrivi un ingrediente">
+          </div>
+          <ul id="ingrSelezionati">
+          </ul>
+    		</div>
+    		<!-- Fine Ingredienti -->	
+  			<!-- Inizio Preparazione -->
+  			<div class="row">
+  				<h4>Preparazione</h4>
+  				<div>
+    				<div class="file-field input-field">
+        				<h6>Immagini Preparazione</h6>
+        				<div class="btn orange accent-4">
+	        				<span>File</span>
+	        				<input type="file" multiple>
+	      				</div>
+	      				<div class="file-path-wrapper">
+	        				<input class="file-path validate" type="text" placeholder="Upload one or more files">
+	      				</div>
+	    			</div>
+  				</div>
+    			<div class="col s12">
+    				<h6>Testo</h6>
+     				<div class="row">
+        				<div class="input-field col s12">
+          					<textarea id="textarea1" class="materialize-textarea"></textarea>
+        				</div>
+      				</div>
+    			</div>
+  			</div>
+  			<div id="Note dell'utente" class="row">
+  				<h4>Note dell'utente</h4>
+  				<div class="col s12">
+     				<div class="row">
+        				<div class="input-field col s12">
+          					<textarea id="textarea1" class="materialize-textarea"></textarea>
+        				</div>
+      				</div>
+    			</div>
+  			</div>
+   			<a id="confirm" class="waves-effect waves-light btn orange accent-4">Invia Ricetta</a>
+		</main>
+
+		<footer class="darkElement">
+		</footer>
+		<!--Import jQuery before materialize.js-->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+    ingrTotali = ["abbacchio", "asparagi", "anticchia", "azzardo", "aiuto", "antenato", "annarella", "anello", "burro", "bambini cinesi", "cacca", "caporchie", "ceci", "cantanti napoletani", "brodo", "datteri", "fantacalcio", "fantini", "pomodori", "patate"];
+    oldVal = $('#ingrInput').val();
+    ingrConsigli = $('ul#ingrConsigli');
+    ingrSelezionati = $('ul#ingrSelezionati');
+    </script>
+		<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

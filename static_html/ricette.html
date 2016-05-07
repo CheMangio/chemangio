@@ -10,40 +10,8 @@
 		<!--Let browser know website is optimized for mobile-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>
-	<style>
-		#homePage div#test {
-			background-image:url('img/test-bg.jpg');
-			background-position:center;
-			background-repeat:no-repeat;
-			position:relative;
-		}
-		#homePage div#test h4 {
-			margin-top:200px;
-			margin-bottom:1em;
-		}
-		#homePage div#test div#lightBg {
-			background:rgba(255,255,255,.65);
-			overflow:hidden;
-			position:absolute;
-			width:100%;
-			left:0;
-			top:200px;
-			text-align:center;
-		}
-		#homePage div#test a.btn-large {
-			margin:2em;
-		}
-		#homePage div#test div#lightBg > div {
-			display:none;
-			opacity:0;
-		}
-		#homePage div#test div#lightBg #test-0 {
-			display:block;
-			opacity:1;
-		}
-	</style>
 
-	<body id="homePage" class="yellow lighten-4">
+	<body class="yellow lighten-4">
 
 		<header class="white">
 			<div id="topToolbar" class="darkElement">
@@ -74,7 +42,7 @@
 			        <li><a href="#">Ingredienti</a></li>
 			        <li><a href="#">Che Mangio?</a></li>
 			      </ul>
-				<form class="right col m3">
+						<form class="right col m3">
 			        <div class="input-field">
 			          <input id="search" type="search" required>
 			          <label for="search"><i class="material-icons">search</i></label>
@@ -87,60 +55,24 @@
 		</header>
 
 		<main class="container">
-			<div id="test" class="row">
-				<div id="lightBg">
-					<div id="test-0">
-						<h1>Che Mangio?</h1>
-						<a class="orange waves-effect waves-light btn-large">Inizia il Test</a>
-					</div>
-					<div id="test-1">
-						<h4>Come desideri rispondere alla domanda numero uno?</h4>
-						<a data-ans="1" class="orange waves-effect waves-light btn-large test-answ">Risposta uno</a>
-						<a data-ans="2" class="orange waves-effect waves-light btn-large test-answ">Risposta due</a>
-					</div>
-					<div id="test-2">
-						<h4>Come desideri rispondere alla domanda numero due?</h4>
-						<a data-ans="1" class="orange waves-effect waves-light btn-large test-answ">Risposta uno</a>
-						<a data-ans="2" class="orange waves-effect waves-light btn-large test-answ">Risposta due</a>
-					</div>
-					<div id="test-3">
-						<h4>Come desideri rispondere alla domanda numero tre?</h4>
-						<a data-ans="1" class="orange waves-effect waves-light btn-large test-answ">Risposta uno</a>
-						<a data-ans="2" class="orange waves-effect waves-light btn-large test-answ">Risposta due</a>
-					</div>
-					<div id="test-4">
-						<h4>Come desideri rispondere alla domanda numero quattro?</h4>
-						<a data-ans="1" class="orange waves-effect waves-light btn-large test-answ">Risposta uno</a>
-						<a data-ans="2" class="orange waves-effect waves-light btn-large test-answ">Risposta due</a>
-					</div>
-					<div id="test-5">
-						<h4>Come desideri rispondere alla domanda numero cinque?</h4>
-						<a data-ans="1" class="orange waves-effect waves-light btn-large test-answ">Risposta uno</a>
-						<a data-ans="2" class="orange waves-effect waves-light btn-large test-answ">Risposta due</a>
-					</div>
-					<div id="test-6">
-						<h4>Come desideri rispondere alla domanda numero sei?</h4>
-						<a data-ans="1" class="orange waves-effect waves-light btn-large test-answ">Risposta uno</a>
-						<a data-ans="2" class="orange waves-effect waves-light btn-large test-answ">Risposta due</a>
-						<a data-ans="3" class="orange waves-effect waves-light btn-large test-answ">Risposta tre</a>
-						<a data-ans="4" class="orange waves-effect waves-light btn-large test-answ">Risposta quattro</a>
-					</div>
-					<div id="test-7">
-						<h4>Come desideri rispondere alla domanda numero sette?</h4>
-						<a data-ans="1" class="orange waves-effect waves-light btn-large test-answ">Risposta uno</a>
-						<a data-ans="2" class="orange waves-effect waves-light btn-large test-answ">Risposta due</a>
-					</div>
-					<div id="test-8">
-						<h4>In questa pagina viene mostrato il risultato del quiz</h4>
-					</div>
+			<div class="row">
+
+				<h2>Ricette: Tutte</h2>
+
+				<div id="catSideBar" class="col s12 sidebar">
+					<h3>Categorie:</h3>
+					<ul>
+						<li><a href="#">Tutte</a></li>
+						<li><a href="#">Antipasti</a></li>
+						<li><a href="#">Primi</a></li>
+						<li><a href="#">Secondi</a></li>
+						<li><a href="#">Contorni</a></li>
+						<li><a href="#">Dessert</a></li>
+					</ul>
 				</div>
-			</div>
 
-			<div id="featuredRecipes" class="row">
-				<h2>Consigli rapidi</h2>
-
-				<div class="col s12 m4">
-					<div class="card large">
+				<div class="col s12 m3">
+					<div class="card large recipeLi">
 						<div class="card-image waves-effect waves-block waves-light">
 							<img class="activator" src="http://placehold.it/640x480">
 						</div>
@@ -163,8 +95,8 @@
 					</div><!-- fine card -->
 				</div>
 
-				<div class="col s12 m4">
-					<div class="card large">
+				<div class="col s12 m3">
+					<div class="card large recipeLi">
 						<div class="card-image waves-effect waves-block waves-light">
 							<img class="activator" src="http://placehold.it/640x480">
 						</div>
@@ -187,8 +119,8 @@
 					</div><!-- fine card -->
 				</div>
 
-				<div class="col s12 m4">
-					<div class="card large">
+				<div class="col s12 m3">
+					<div class="card large recipeLi">
 						<div class="card-image waves-effect waves-block waves-light">
 							<img class="activator" src="http://placehold.it/640x480">
 						</div>
@@ -211,20 +143,15 @@
 					</div><!-- fine card -->
 				</div>
 
-			</div>
-
-			<div id="popularRecipes" class="row">
-				<h2>Ricette popolari</h2>
-
 				<div class="col s12 m3">
-					<div class="card large">
+					<div class="card large recipeLi">
 						<div class="card-image waves-effect waves-block waves-light">
 							<img class="activator" src="http://placehold.it/640x480">
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">Lorem al forno con ipsum marinati</span>
 							<p>
-								<span class="likes"><i class="small material-icons">thumb_up</i> Valutazione: 5/10</span>
+								<span class="val"><i class="small material-icons">grade</i> Valutazione: 5/10</span>
 								<a class="orangeElement waves-effect waves-orange btn-flat" href="#">Leggi &rarr;</a>
 							</p>
 						</div>
@@ -241,14 +168,14 @@
 				</div>
 
 				<div class="col s12 m3">
-					<div class="card large">
+					<div class="card large recipeLi">
 						<div class="card-image waves-effect waves-block waves-light">
 							<img class="activator" src="http://placehold.it/640x480">
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">Lorem al forno con ipsum marinati</span>
 							<p>
-								<span class="likes"><i class="small material-icons">thumb_up</i> Valutazione: 5/10</span>
+								<span class="val"><i class="small material-icons">grade</i> Valutazione: 5/10</span>
 								<a class="orangeElement waves-effect waves-orange btn-flat" href="#">Leggi &rarr;</a>
 							</p>
 						</div>
@@ -265,14 +192,14 @@
 				</div>
 
 				<div class="col s12 m3">
-					<div class="card large">
+					<div class="card large recipeLi">
 						<div class="card-image waves-effect waves-block waves-light">
 							<img class="activator" src="http://placehold.it/640x480">
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">Lorem al forno con ipsum marinati</span>
 							<p>
-								<span class="likes"><i class="small material-icons">thumb_up</i> Valutazione: 5/10</span>
+								<span class="val"><i class="small material-icons">grade</i> Valutazione: 5/10</span>
 								<a class="orangeElement waves-effect waves-orange btn-flat" href="#">Leggi &rarr;</a>
 							</p>
 						</div>
@@ -289,14 +216,14 @@
 				</div>
 
 				<div class="col s12 m3">
-					<div class="card large">
+					<div class="card large recipeLi">
 						<div class="card-image waves-effect waves-block waves-light">
 							<img class="activator" src="http://placehold.it/640x480">
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">Lorem al forno con ipsum marinati</span>
 							<p>
-								<span class="likes"><i class="small material-icons">thumb_up</i> Valutazione: 5/10</span>
+								<span class="val"><i class="small material-icons">grade</i> Valutazione: 5/10</span>
 								<a class="orangeElement waves-effect waves-orange btn-flat" href="#">Leggi &rarr;</a>
 							</p>
 						</div>
@@ -312,6 +239,53 @@
 					</div><!-- fine card -->
 				</div>
 
+				<div class="col s12 m3">
+					<div class="card large recipeLi">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="http://placehold.it/640x480">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Lorem al forno con ipsum marinati</span>
+							<p>
+								<span class="val"><i class="small material-icons">grade</i> Valutazione: 5/10</span>
+								<a class="orangeElement waves-effect waves-orange btn-flat" href="#">Leggi &rarr;</a>
+							</p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Lorem al forno con ipsum marinati</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br>
+							<span class="diff"><i class="small material-icons">error_outline</i> Difficoltà: facile</span><br>
+							<span class="tempo"><i class="small material-icons">query_builder</i> Tempo: 30min</span><br>
+							<span class="costo"><i class="small material-icons">shopping_cart</i> Costo: basso</span>
+						</p>
+						</div>
+					</div><!-- fine card -->
+				</div>
+
+				<div class="col s12 m3">
+					<div class="card large recipeLi">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="http://placehold.it/640x480">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Lorem al forno con ipsum marinati</span>
+							<p>
+								<span class="val"><i class="small material-icons">grade</i> Valutazione: 5/10</span>
+								<a class="orangeElement waves-effect waves-orange btn-flat" href="#">Leggi &rarr;</a>
+							</p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Lorem al forno con ipsum marinati</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br>
+							<span class="diff"><i class="small material-icons">error_outline</i> Difficoltà: facile</span><br>
+							<span class="tempo"><i class="small material-icons">query_builder</i> Tempo: 30min</span><br>
+							<span class="costo"><i class="small material-icons">shopping_cart</i> Costo: basso</span>
+						</p>
+						</div>
+					</div><!-- fine card -->
+				</div>
 			</div>
 		</main>
 
@@ -322,6 +296,5 @@
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="js/materialize.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
-		<script type="text/javascript" src="js/test.js"></script>
 	</body>
 </html>
