@@ -10,21 +10,6 @@
 		<!--Let browser know website is optimized for mobile-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>
-
-	<style>
-		#pageIngredienti .gruppoIngr {
-			background-color:#fff;
-			margin-bottom:2em;
-			padding-bottom:1em;
-		}
-		#pageIngredienti .gruppoIngr h5 {
-			border-bottom:1px solid;
-		}
-		#pageIngredienti .chip {
-			margin-bottom:.2em;
-		}
-	</style>
-
 	<body id="pageIngredienti" class="yellow lighten-4">
 
 		<header class="white">
@@ -70,7 +55,7 @@
 
 		<main class="container">
 			<div id="ingrediente" class="row">
-				<h1 class="col s12">Tutti gli ingredienti</h1>
+				<h2 class="col s12">Tutti gli ingredienti</h2>
 
 				<div class="col s12 gruppoIngr">
 					<h5 id="ingrA">A</h5>
@@ -445,6 +430,52 @@
 		</main>
 
 		<footer class="darkElement">
+			<div class="row">
+      <div class="container">
+        <div class="col s12">
+        <h4>Contact us</h4>
+        </div>
+
+        <div class="col s12 m12 l6">
+        <h5>Send us an email</h5>
+          <form method="post" action="contact-us/send" class="panel contactus">
+            <div class="row">
+              <div class="input-field1 contactus col s12">
+                <input id="contact_name" name="contact_name" type="text" class="validate">
+                <label for="contact_name">Your name</label>
+              </div>
+              <div class="input-field1 contactus col s12">
+                <input id="contact_email" name="contact_email" type="email" class="validate">
+                <label for="contact_email">Your email</label>
+              </div>
+              <div class="input-field1 contactus col s12">
+                <input id="contact_subject" name="contact_subject" type="text" class="validate">
+                <label for="contact_subject">Subject</label>
+              </div>
+              <div class="input-field1 contactus col s12">
+                <textarea id="textarea" name="contact_message" class="materialize-textarea"></textarea>
+                <label for="textarea">Message</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s12">
+                <button class="btn waves-effect waves-light right" type="submit">Send             
+                <i class="material-icons right">send</i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col s12 m12 l6">
+          <h5>Info</h5>
+          L'Aquila, Italia<br/>0862-615C3M0<br/>CheMangio@gmail.com<br/>10am - 5pm EST Monday-Friday<br/><br/>
+          <div class="col s12 16">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11793.330318537784!2d13.382894!3d42.356751!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5a65eca9a0cd9f3e!2sUniversit%C3%A0+degli+Studi+dell&#39;Aquila!5e0!3m2!1sit!2sit!4v1461925383782"  allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
 
 		</footer>
 		<!--Import jQuery before materialize.js-->

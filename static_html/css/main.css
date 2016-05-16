@@ -1,11 +1,8 @@
 body {
   color:#3e2723;
 }
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Pacifico', cursive, serif;
-}
-.sidebar h3 {
-  font-size:1.6em;
 }
 div#topToolbar {
   text-align:right;
@@ -54,45 +51,29 @@ div#test {
   height:640px;
 }
 
-div.recipeLi a.orangeElement {
+div#featuredRecipes a.orangeElement,
+div#popularRecipes a.orangeElement {
   display: block;
   position: absolute;
   bottom: 8px;
   right: 8px;
   color:white;
 }
-
-div.recipeLi .card span {
+div#featuredRecipes .card span,
+div#popularRecipes .card span {
   line-height:2.5em;
 }
-div.recipeLi .card span.card-title {
+div#featuredRecipes .card span.card-title,
+div#popularRecipes .card span.card-title {
   line-height:1.444em;
 }
-div.recipeLi i {
+div#featuredRecipes i,
+div#popularRecipes i {
   vertical-align:middle;
-}
-div#catSideBar h3 {
-  display:inline-block;
-  margin-right:.6em;
-}
-div#catSideBar ul {
-  display: inline-block;
-}
-div#catSideBar ul li {
-  display:inline-block;
-  font-family: "Pacifico", cursive, serif;
-  font-size:1.44em;
-  margin-right:.6em;
-}
-div#catSideBar ul li a:link {
-  font-weight:400;
-}
-div#catSideBar ul li a:hover {
-  color:#ff6d00;
 }
 
 footer {
-  height:400px;
+  height:auto;
 }
 
 @media only screen and (max-width: 600px) {
@@ -104,3 +85,565 @@ footer {
     width:100%;
   }
 }
+
+/*CSS HOME*/
+#homePage div#test {
+  background-image:url('../img/test-bg.jpg');
+  background-position:center;
+  background-repeat:no-repeat;
+  position:relative;
+}
+#homePage div#test h4 {
+  margin-top:200px;
+  margin-bottom:1em;
+}
+#homePage div#test div#lightBg {
+  background:rgba(255,255,255,.65);
+  overflow:hidden;
+  position:absolute;
+  width:100%;
+  left:0;
+  top:200px;
+  text-align:center;
+}
+#homePage div#test a.btn-large {
+  margin:2em;
+}
+#homePage div#test div#lightBg > div {
+  display:none;
+  opacity:0;
+}
+#homePage div#test div#lightBg #test-0 {
+  display:block;
+  opacity:1;
+}
+/*FINE CSS HOME*/
+
+/*CSS SCRITTE*/
+
+/*FINE*/
+
+/*CSS PAGINA LOGIN E SIGN IN*/
+#LogIn-Signin form#registration, form#login{
+  padding-top: 20px;
+}
+
+#LogIn-Signin .signinlogin label {
+ color: #3e2723;
+}
+/* label focus color */
+#LogIn-Signin .signinlogin input[type=text]:focus + label {
+ color: #3e2723;
+}
+/* label underline focus color */
+#LogIn-Signin .signinlogin input[type=text]:focus {
+ border-bottom: 1px solid #3e2723;
+ box-shadow: 0 1px 0 0 #3e2723;
+}
+/* valid color */
+#LogIn-Signin .signinlogin input[type=text].valid {
+ border-bottom: 1px solid #3e2723;
+ box-shadow: 0 1px 0 0 #3e2723;
+}
+/* invalid color */
+#LogIn-Signin .signinlogin input[type=text].invalid {
+ border-bottom: 1px solid #3e2723;
+ box-shadow: 0 1px 0 0 #3e2723;
+}
+/* icon prefix focus color */
+#LogIn-Signin .signinlogin .prefix.active {
+ color: #3e2723;
+}
+
+#LogIn-Signin .signinlogin input[type=password]:focus + label {
+ color: #3e2723;
+}
+/* label underline focus color */
+#LogIn-Signin .signinlogin input[type=password]:focus {
+ border-bottom: 1px solid #3e2723;
+ box-shadow: 0 1px 0 0 #3e2723;
+}
+/* valid color */
+#LogIn-Signin .signinlogin input[type=password].valid {
+ border-bottom: 1px solid #3e2723;
+ box-shadow: 0 1px 0 0 #3e2723;
+}
+/* invalid color */
+#LogIn-Signin .signinlogin input[type=password].invalid {
+ border-bottom: 1px solid #3e2723;
+ box-shadow: 0 1px 0 0 #3e2723;
+}
+/* icon prefix focus color */
+#LogIn-Signin .signinlogin .prefix.active {
+ color: #3e2723;
+}
+
+#LogIn-Signin .signinlogin input[type=email]:focus + label {
+ color: #3e2723;
+}
+/* label underline focus color */
+#LogIn-Signin .signinlogin input[type=email]:focus {
+ border-bottom: 1px solid #3e2723;
+ box-shadow: 0 1px 0 0 #3e2723;
+}
+/* valid color */
+#LogIn-Signin .in.signinlogin input[type=email].valid {
+ border-bottom: 1px solid #3e2723;
+ box-shadow: 0 1px 0 0 #3e2723;
+}
+/* invalid color */
+#LogIn-Signin .signinlogin input[type=email].invalid {
+ border-bottom: 1px solid #3e2723;
+ box-shadow: 0 1px 0 0 #3e2723;
+}
+/* icon prefix focus color */
+#LogIn-Signin .signinlogin .prefix.active {
+ color: #3e2723;
+}
+/*FINE CSS PAGINA LOGIN E SIGN IN*/
+
+
+/*CSS CONTACT US*/
+form#contactus{
+  padding-top: 20px;
+}
+.contactus label {
+ color: #fff9c4;
+}
+/* label focus color */
+.contactus input[type=text]:focus + label {
+ color: #ff6d00;
+}
+/* label underline focus color */
+.contactus input[type=text]:focus {
+ border-bottom: 1px solid #fff9c4;
+ box-shadow: 0 1px 0 0 #fff9c4;
+}
+/* valid color */
+.contactus input[type=text].valid {
+ border-bottom: 1px solid #fff9c4;
+ box-shadow: 0 1px 0 0 #fff9c4;
+}
+/* invalid color */
+.contactus input[type=text].invalid {
+    border-bottom: 1px solid #fff9c4;
+    box-shadow: 0 1px 0 0 #fff9c4;
+}
+/* icon prefix focus color */
+.contactus .prefix.active {
+    color: #fff9c4;
+}
+/* label focus color */
+.contactus input[type=email]:focus + label {
+    color: #ff6d00;
+}
+/* label underline focus color */
+.contactus input[type=email]:focus {
+    border-bottom: 1px solid #fff9c4;
+    box-shadow: 0 1px 0 0 #fff9c4;
+}
+/* valid color */
+.contactus input[type=email].valid {
+    border-bottom: 1px solid #fff9c4;
+    box-shadow: 0 1px 0 0 #fff9c4;
+}
+/* invalid color */
+.contactus input[type=email].invalid {
+    border-bottom: 1px solid #fff9c4;
+    box-shadow: 0 1px 0 0 #fff9c4;
+}
+textarea:focus:not([readonly]) + label{
+    border-bottom: 0px
+    box-shadow: 0 1px 0 0 #fff9c4;
+    color:#ff6200 !important;
+}
+textarea.materialize-textarea:focus:not([readonly]){
+    border-bottom:1px solid #fff9c4;
+    box-shadow: 0 1px 0 0 #fff9c4;
+}
+iframe{
+    width:100%;
+    height:330px;
+    border:0;
+}
+/*FINE CSS CONTACT US*/
+
+
+/*CSS PAGINA PERSONALE*/
+#personalpage div#myrecipes, div#favorites {
+  
+    margin-top:2em;
+    height:320px;
+    margin-bottom: 50px;
+}
+#personalpage div#recipeslider{
+  background:#fff;
+  height: 300px;
+}
+#personalpage div#recipepagination{
+  position: relative;
+  background:#fff;
+  height: 30px;
+  
+}
+#personalpage button#backforw{
+  height: 17px;
+  line-height: 17px;
+  margin:0 auto;
+  position: relative;
+
+}
+
+#personalpage div#bottoncontainer{
+  width:200px;
+  margin:0 auto;
+  text-align: center;
+  position: relative;
+}
+#personalpage div#ricetta{
+  height: 300px !important;
+  width: 100px ;
+
+}
+#personalpage div#userphoto{
+  position: relative;
+  height: 300px;
+  margin-bottom: 20px;
+}
+#personalpage div#photoprofile{
+  width: 80%;
+  height: 90%;
+  margin-top:10%;
+  margin-bottom:5%;
+  margin-left: 2%;
+  
+}
+#personalpage img#photo{
+  width: 100%;
+  height: 100%;
+
+}
+#personalpage div#userchange{
+  height: 300px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#personalpage .card.element{
+  width: 21%;
+  margin-left:2%;
+  margin-right:2%;
+  height: 280px;
+  float: left;
+  display: inline-block;
+}
+#personalpage div#favoriteslist{
+  position: relative;
+}
+#personalpage div#mylist{
+  position: relative;
+}
+#personalpage div#userinfo{
+  height: 90%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+/*FINE CSS PAGINA PERSONALE*/
+
+
+
+/*INIZIO CSS BOTTONI*/
+ .btn {
+  overflow: hidden;
+  background-color: #ff6d00 !important;
+  
+}
+ .btn:hover:before {
+  opacity:1;
+}
+
+ .btn:before {
+    content: '';
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: opacity .2s;
+    z-index: -1;
+}
+ .btn:active{
+  background-color: #ff6d00;
+}
+/*FINE CSS BOTTONI*/
+
+
+/*CSS INSERIMENTO UTENTE*/
+
+
+#pageInsRicUtente #forminserimento label {
+ color: #3e2723;
+}
+/* label focus color */
+#pageInsRicUtente #forminserimento input[type=text]:focus + label {
+ color: #3e2723;
+}
+/* label underline focus color */
+#pageInsRicUtente #forminserimento input[type=text]:focus {
+ border-bottom: 1px solid #3e2723;
+ box-shadow: 0 1px 0 0 #3e2723;
+}
+/* valid color */
+#pageInsRicUtente #forminserimento input[type=text].valid {
+ border-bottom: 1px solid #3e2723;
+ box-shadow: 0 1px 0 0 #3e2723;
+}
+/* invalid color */
+#pageInsRicUtente #forminserimento input[type=text].invalid {
+ border-bottom: 1px solid #3e2723;
+ box-shadow: 0 1px 0 0 #3e2723;
+}
+/* icon prefix focus color */
+#pageInsRicUtente  #forminserimento .prefix.active {
+ color: #3e2723;
+}
+
+
+#pageInsRicUtente #difficolta li{
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+#pageInsRicUtente .input-field #textarea1:focus{
+  border-bottom: 1px solid #3e2723;
+}
+
+#pageInsRicUtente .input-field #preparazione:focus {
+  border-bottom: 1px solid #3e2723;
+  box-shadow: 0px 1px 0px 0px #3e2723;
+}
+
+#pageInsRicUtente .input-field #ingrInput:focus {
+  border-bottom: 1px solid #3e2723;
+  box-shadow: 0px 1px 0px 0px #3e2723;
+  
+}
+
+.dropdown-content li > span{
+  color: #3e2723;
+}
+
+
+
+
+#pageInsRicUtente #ingredienti ul#ingrConsigli li,
+#pageInsRicUtente #ingredienti ul#ingrSelezionati li {
+  border-bottom:1px solid #ddd;
+  cursor:pointer;
+  background:#fff;
+  line-height:2em;
+}
+
+#pageInsRicUtente #ingredienti ul#ingrConsigli li:hover {
+  background:#eee;
+}
+
+#pageInsRicUtente #ingredienti ul#ingrSelezionati li input {
+  margin-bottom:0;
+}
+#pageInsRicUtente #ingredienti ul#ingrSelezionati li span {
+  line-height:3.5em;
+}
+#pageInsRicUtente #ingredienti ul#ingrSelezionati li span.remIngr {
+  text-align:right;
+  cursor: pointer;
+}
+/*FINE CSS INSERIMENTO UTENTE*/
+
+
+/*CSS PAGINA INGREDIENTE*/
+#pageIngrediente div#valori ul {
+  background-color:#fff;
+}
+#pageIngrediente div#ricette .card-content img {
+  float:left;
+  margin-bottom:1em;
+  margin-right:1em;
+}
+#pageIngrediente div#ricette .card-content .card-title {
+  line-height: 24px;
+  margin-bottom:1em;
+  display:inline-block;
+}
+#pageIngrediente div#ricette .card-action {
+  text-align:right;
+}
+
+.pagination li.active {
+  background-color:#ff6d00;
+}
+
+.waves-effect.waves-orange .waves-ripple {
+  background-color: #ff6d00;
+}
+
+/*FINE CSS PAGINA INGREDIENTE*/
+
+
+/*CSS PAGINA INGREDIENTI*/
+#pageIngredienti .gruppoIngr {
+  background-color:#fff;
+  margin-bottom:2em;
+  margin-top:1em;
+}
+#pageIngredienti .gruppoIngr h5 {
+  border-bottom:1px solid;
+}
+#pageIngredienti .chip {
+  margin-bottom:.2em;
+}
+/*FINE CSS PAGINA INGREDIENTI*/
+
+.ingrInput:focus {
+  border-bottom: 1px solid #ff6d00;
+}
+
+/*CSS RISULTATI RICERCA*/
+#Risultati-Ricerca .card-image {
+  margin: 10px 0 10px 0;
+  width: 100%;
+  height: auto;
+}
+
+#Risultati-Ricerca .card-image img{
+  width: 100%;
+  height: auto;
+}
+
+#Risultati-Ricerca .card-action a {
+  margin: -10px 0 0 0;
+  float: right;
+}
+/*FINE CSS RISULTATI RICERCA*/
+
+
+/*CSS RICETTA UTENTE*/
+#Ricetta-Utente div .bar img{
+  max-height: 50px;
+  max-width: 50px;
+  position: absolute;
+}
+
+#Ricetta-Utente div .col.s2{ 
+  min-width: 150px;
+  margin-left: 25px;
+}
+#Ricetta-Utente div .col.s4{ 
+ margin-bottom: 20px;
+}
+
+#Ricetta-Utente div .bar  p{
+  margin-left: 50px;
+  margin-top: 0px;
+  padding-left: 10px;
+  font-family: "Pacifico";
+}
+
+#Ricetta-Utente div #data{
+  margin-top: -7px;
+  color: #ff6d00;
+}
+
+#Ricetta-Utente #autore{
+  text-align: left;
+}
+
+#Ricetta-Utente h4{
+  font-family: 'Pacifico', cursive, serif;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+}
+
+#Ricetta-Utente #ingredienti a{
+  /*display: inline-block;*/
+  font-family: 'Pacifico', cursive, serif;
+  color: #ff6d00;
+  float: left;
+}
+
+#Ricetta-Utente #preparazione img{
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+#Ricetta-Utente .collection{
+  
+  border-color: #fff9c4;
+}
+/*CSS RICETTA UTENTE*/
+
+
+/*CSS SINGOLA RICETTA*/
+#Singola-Ricetta div .bar img{
+  max-height: 50px;
+  max-width: 50px;
+  position: absolute;
+}
+
+#Singola-Ricetta div .col.s2{ 
+  min-width: 150px;
+  margin-left: 25px;
+}
+#Singola-Ricetta div .col.s4{ 
+ margin-bottom: 20px;
+}
+
+#Singola-Ricetta div .bar  p{
+  margin-left: 50px;
+  margin-top: 0px;
+  padding-left: 10px;
+  font-family: "Pacifico";
+}
+
+#Singola-Ricetta div #data{
+  margin-top: -7px;
+  color: #ff6d00;
+}
+
+#Singola-Ricetta #autore{
+  text-align: left;
+}
+
+#Singola-Ricetta h4{
+  font-family: 'Pacifico', cursive, serif;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+}
+
+#Singola-Ricetta #ingredienti a{
+  /*display: inline-block;*/
+  font-family: 'Pacifico', cursive, serif;
+  color: #ff6d00;
+  float: left;
+}
+
+#Singola-Ricetta #preparazione img{
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+#Singola-Ricetta .collection{
+  margin-top: 20px;
+  border-color: #fff9c4;
+}
+/*FINE CSS SINGOLA RICETTA*/
+
+
+
+
+
+
+
